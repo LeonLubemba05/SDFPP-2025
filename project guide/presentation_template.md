@@ -19,7 +19,7 @@
 - What this project is and what you learned from building it
 - One thing you're proud of
 
-💬 *Example:*  
+💬 *Example:*   
 "Hi, I’m Sam, and this is my resume project built with HTML and CSS. This project taught me how to structure a real-world site from a design file, and I’m especially proud of how closely I matched the layout in the Figma."
 
 ---
@@ -42,7 +42,7 @@ Go section by section and explain:
 
 💡 *Tip:* Don’t just describe what we can already see — explain the **why** behind your layout and styling.
 
----
+--- 
 
 ### 🟢 3. **Responsiveness Demo (30 seconds)**
 **Resize your browser** to show how the layout changes for mobile.

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leon Lubemba Resume</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
-  <body background="bgcolor.png">
+  <body>
     <div class="container">
+      <!-- HEADER -->
       <header class="profile">
-        <img src="pic2.jpg" alt="profile picture" class="profile-pic" />
+        <img src="pic2.jpg" alt="Profile Picture" class="profile-pic" />
         <div class="profile-info">
           <h1>Leon Lubemba</h1>
           <p>
@@ -22,8 +22,8 @@
         </div>
       </header>
 
-      <section class="info-section">
-        <div class="card-proficiency">
+      <section class="top-sections">
+        <div class="card proficiency">
           <h3>Proficiency</h3>
           <div class="levels">
             <span>Beginner</span>
@@ -32,113 +32,152 @@
           </div>
           <div class="bars">
             <label>JavaScript</label>
-            <div class="bar js"></div>
+            <div class="bar"><div class="fill js"></div></div>
 
             <label>React</label>
-            <div class="bar react"></div>
+            <div class="bar"><div class="fill react"></div></div>
 
             <label>Node.js</label>
-            <div class="bar node"></div>
+            <div class="bar"><div class="fill node"></div></div>
 
             <label>HTML + CSS</label>
-            <div class="bar htmlcss"></div>
+            <div class="bar"><div class="fill htmlcss"></div></div>
           </div>
         </div>
 
-        <div class="skills-section">
+        <div class="card skills">
           <h3>Skills</h3>
-          <div class="tag-container">
-            <span class="tag highlight">Software Development</span>
-            <span class="tag">Agile</span>
-            <span class="tag">UI Design</span>
-            <span class="tag">Problem Solving</span>
-            <span class="tag">Git And Version Control</span>
-            <span class="tag">Web Development</span>
-            <span class="tag">Team Collaboration</span>
-            <span class="tag">Functional Programming</span>
-            <span class="tag">RESTful APIs</span>
+          <div class="tags">
+            <span>Software Development</span>
+            <span>Agile</span>
+            <span>UI Design</span>
+            <span>Problem Solving</span>
+            <span>Git And Version Control</span>
+            <span>Web Development</span>
+            <span>Team Collaboration</span>
+            <span>Functional Programming</span>
+            <span>RESTful APIs</span>
           </div>
         </div>
       </section>
 
-      <section class="projects-section">
+      <!-- PROJECTS -->
+      <section class="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
-          <div class="card-green">
-            <h3>2025<br /><strong>CS Cat HTML portfolio</strong></h3>
+          <div class="project-card">
+            <h4>2025</h4>
+            <h3>CS Cat HTML portfolio</h3>
             <p>
               <strong>Brief:</strong> Developed a personal portfolio website to
               showcase projects and skills.
             </p>
-            <p><strong>Technologies:</strong>HTML and CSS</p>
+            <p><strong>Technologies:</strong> HTML and CSS</p>
             <p>
               <strong>Responsibilities:</strong> Designed and implemented the
               website, ensured responsiveness and accessibility.
             </p>
           </div>
-
-          <div class="card">
-            <h3>2025<br /><strong>Tailwind Footer </strong></h3>
-            <p><strong>Brief:</strong> Designed a smiliar looking</p>
-            <p><strong>Technologies:</strong>Tailwind and HTML</p>
+          <div class="project-card">
+            <h4>2025</h4>
+            <h3>Tailwind Footer</h3>
+            <p><strong>Brief:</strong>Designed a smiliar looking</p>
+            <p><strong>Technologies:</strong>Tailwind And HTML</p>
             <p>
               <strong>Responsibilities:</strong> Ensured that the footer looks
               exactly like the footer we were assigned to reproduce. Guarantee
               that the website is responsive
             </p>
           </div>
+          <div class="project-card">
+            <h4>2025</h4>
+            <h3>To-Do list</h3>
+            <p>
+              <strong>Brief:</strong> I created a simple to-do list where people
+              can add, edit, and delete tasks. A to-do list is basically a way
+              to organise your day—people use it so they don’t forget important
+              things, and it helps them stay focused and productive.
+            </p>
+            <p><strong>Technologies:</strong> HTML and CSS</p>
+            <p>
+              <strong>Responsibilities:</strong>When building it, my
+              responsibilities included designing the layout using HTML and CSS,
+              making sure it looked clean and easy to read, and using JavaScript
+              to make it interactive. I had to make sure tasks could be added,
+              checked off when completed, and removed if no longer needed. I
+              also focused on keeping the code neat and easy to understand, so
+              it could be improved in the future.
+            </p>
+          </div>
         </div>
       </section>
 
-      <div class="section education">
-        <h2>Education</h2>
-
-        <div class="card codespace">
-          <h3>Aug. 2025 – Mar. 2026<br /><strong>CodeSpace Academy</strong></h3>
-          <p>Software Development | Full-time</p>
-          <ul>
-            <li>
-              Focused on CSS,HTML and JavaScript to build intuitive, dynamic web
-              applications
-            </li>
-            <li>worked together on practical personal projects with peers.</li>
-            <li>
-              acquired firsthand knowledge of advanced web technology and
-              development tools
-            </li>
-          </ul>
-        </div>
-
-        <div class="card cput">
-          <h3>
-            Jan. 2020 – Dec. 2024<br /><strong>Voortrekker High School</strong>
-          </h3>
-          <p>Matric | NSC Level 4</p>
-          <ul>
-            <li>Built academic and problem-solving skills</li>
-            <li>Joined projects that encouraged critical thinking</li>
-            <li>Particapted in leadership role</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tools-area">
-        <h2>Tools</h2>
-        <img src="Frame .png" />
-      </div>
-
-      <div class="experience-container">
-        <h2>Experience</h2>
-
-        <div class="job most-recent">
-          <div class="job-header">
-            <span>Jan. 2025 – </span>
-            <span class="most-recent-tag">Most Recent</span>
+      <section class="education-tools">
+        <div class="education">
+          <h2>Education</h2>
+          <div class="edu-card">
+            <h4>Aug. 2025 – Mar. 2026</h4>
+            <h3>CodeSpace Academy</h3>
+            <p>Software Development | Part-time</p>
+            <ul>
+              <li>
+                Focused on CSS,HTML and JavaScript to build intuitive, dynamic
+                web applications
+              </li>
+              <li>
+                worked together on practical personal projects with peers.
+              </li>
+              <li>
+                acquired firsthand knowledge of advanced web technology and
+                development tools
+              </li>
+            </ul>
           </div>
-          <div class="one">
+          <div class="edu-card">
+            <h4>Feb. 2020 – Dec. 2024</h4>
+            <h3>Voortrekker High School</h3>
+            <p>Matric | NSC Level 4</p>
+            <ul>
+              <li>Built academic and problem-solving skills</li>
+              <li>Joined projects that encouraged critical thinking</li>
+              <li>Particapted in leadership role</li>
+            </ul>
+          </div>
+          <div class="edu-card">
+            <h4>Jan. 2013 – Dec. 2019</h4>
+            <h3>Thomas wildschutt primary school</h3>
+            <p>Primary school | NQF Level 1</p>
+            <ul>
+              <li>
+                I mastered reading, writing, and math—skills that turn everyday
+                challenges into opportunities to learn and succeed.
+              </li>
+              <li>
+                I built friendships and learned teamwork, turning school into
+                both a classroom and an adventure.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tools">
+          <h2>Tools</h2>
+          <div class="tool-icons">
+            <img src="1.png" alt="" />
+            <img src="2.png" alt="" />
+            <img src="3.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <div class="job-card most-recent">
+          <span class="most-recent-tag">Most Recent</span>
+          <h4>Jan. 2025 –</h4>
           <h3>Running shoe specials</h3>
-          <p class="company">The Sweat shop | Full-time</p></div>
-          <div class="two"><ul>
+          <p>The Sweat shop | Full-time</p>
+          <ul>
             <li>
               Do a gates analysis on people to analyse there gate and foot type
             </li>
@@ -151,15 +190,11 @@
               type
             </li>
           </ul>
-          </div>
         </div>
-
-        <div class="job">
-          <div class="job-header">
-            <span>Feb. 2021 – Dec. 2022</span>
-          </div>
-          <h3>handy work</h3>
-          <p class="company">Soeker Hiring Supply | Part-time</p>
+        <div class="job-card">
+          <h4>Jan. 2023 – Jul. 2024</h4>
+          <h3>Handy work</h3>
+          <p>Soeker Hiring Supply | Part-time</p>
           <ul>
             <li>Deliver tables and chairs to functions and events</li>
             <li>
@@ -169,24 +204,34 @@
             <li>organising the place</li>
           </ul>
         </div>
-      </div>
+        <div class="job-card">
+          <h4>Feb. 2021 – Dec. 2022</h4>
+          <h3>Librarian</h3>
+          <p>Voortrekker H.S Library | Part-time</p>
+          <ul>
+            <li>
+              I needed to keep all the books, resources, and digital stuff
+              organized so it’s easy for anyone to find what they need.
+            </li>
+            <li>
+              I needed to help people track down information, whether it’s a
+              specific book, an article, or something online.
+            </li>
+            <li>
+              I encourage learning by recommending good reads, running programs,
+              and helping people build research skills.
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <footer>
-        <p class="footer-heading">
-          Let’s chat! I’m ready to work on exciting projects.
-        </p>
-        <p class="footer-links">
-          leonlubemba@email.com &nbsp; | &nbsp; 075 251 2905 &nbsp; | &nbsp;
-          <a href="#">LinkedIn Link</a> &nbsp; | &nbsp;
-          <a href="#">GitHub Link</a>
+        <p>Let’s chat! I’m ready to work on exciting projects.</p>
+        <p>
+          leonlubemba@email.com | 075 251 2905 | <a href="#">LinkedIn</a> |
+          <a href="#">GitHub</a>
         </p>
       </footer>
-
-      <div class="Projects"></div>
-
-      <div class="education"></div>
-
-      <div class="Experince"></div>
     </div>
   </body>
 </html>
