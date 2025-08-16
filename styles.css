@@ -14,22 +14,40 @@ body {
 
 .profile {
   display: flex;
-  background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
+  width: 144px;
+  height: 144px;
+  border-radius: 24px;
   object-fit: cover;
 }
-
 .profile-info h1 {
-  margin: 0;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 16px;
 }
+
+.profile-info {
+  background-color: white;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 3px #dadada;
+}
+
 
 .top-sections {
   display: flex;
@@ -40,7 +58,7 @@ body {
 .card {
   background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   flex: 1;
 }
 
@@ -50,27 +68,30 @@ body {
   font-size: 0.85em;
 }
 
-.bars {
-  margin-top: 10px;
-}
-
 .bar {
   background: #ddd;
   border-radius: 6px;
   overflow: hidden;
   height: 8px;
-  margin-bottom: 10px;
+  margin: 8px 0 12px;
 }
 
 .fill {
   height: 100%;
   background: #4a7c59;
 }
-
-.fill.js { width: 90%; }
-.fill.react { width: 70%; }
-.fill.node { width: 50%; }
-.fill.htmlcss { width: 80%; }
+.fill.js {
+  width: 90%;
+}
+.fill.react {
+  width: 70%;
+}
+.fill.node {
+  width: 50%;
+}
+.fill.htmlcss {
+  width: 80%;
+}
 
 .tags span {
   display: inline-block;
@@ -81,16 +102,37 @@ body {
   font-size: 0.85em;
 }
 
+
+.projects {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .project-card {
-  background: white;
+  background-color: #4a8b70;
+  color: white;
   padding: 15px;
   border-radius: 12px;
+  position: relative;
+}
+.project-card.light {
+  background-color: #e7f0ec;
+  color: #222;
+}
+.corner-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: red;
 }
 
 .education-tools {
@@ -99,36 +141,76 @@ body {
   margin-top: 20px;
 }
 
-.education, .tools {
+.education,
+.tools {
   background: white;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   flex: 1;
 }
 
 .edu-card {
+  background-color: #4a8b70;
+  color: white;
+  border-radius: 16px;
+  padding: 15px;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.edu-card.light {
+  background-color: #e7f0ec;
+  color: #222;
+  display: flex;
+  flex-direction: row;
 }
 
 .tool-icons img {
-  width: 100%;
-  margin-bottom: 10px;
+  width: 60px;
+  margin: 5px;
 }
 
+
 .experience {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
   margin-top: 20px;
 }
 
 .job-card {
-  background: white;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 15px;
 }
-
+.job-card.dark {
+  background-color: #4a8b70;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.job-card.light {
+  background-color: #e7f0ec;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+}
+.most-recent-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 10px;
+  
+}
 
 footer {
-  background: #d4552c;
+  background: #d76239;
   color: white;
   text-align: center;
   padding: 20px;
@@ -139,4 +221,16 @@ footer {
 footer a {
   color: white;
   text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  .top-sections,
+  .education-tools {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
 }
